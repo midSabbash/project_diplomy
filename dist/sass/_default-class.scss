@@ -1,0 +1,22 @@
+
+// vertical align
+.vertical-align{
+  & > *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &::before{
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
+  }
+}
+
+//standard
+.title{
+  span{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+  }
+}

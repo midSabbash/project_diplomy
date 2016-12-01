@@ -1,0 +1,21 @@
+// standard style for before and after
+%styleForPseudoElement{
+  display: inline-block;
+  content: "";
+}
+
+%indents70{
+  padding: 70px 0;
+}
+
+// standard font size
+$standardFontSize: 14px;
+
+// standard color
+$lightGreen: #b2ff59;
+$darkGreen: #3fbb01;
+$greyTextColor: #515356;
+
+$lightGreyBg: #eee;
+
+//fonts
