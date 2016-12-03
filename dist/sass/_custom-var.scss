@@ -3,11 +3,15 @@
   display: inline-block;
   content: "";
 }
-
 %indents70{
   padding: 70px 0;
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 15px 0;
+  }
 }
-
 // standard font size
 $standardFontSize: 14px;
 
@@ -15,7 +19,12 @@ $standardFontSize: 14px;
 $lightGreen: #b2ff59;
 $darkGreen: #3fbb01;
 $greyTextColor: #515356;
-
 $lightGreyBg: #eee;
 
-//fonts
+
+
+// btn color
+$btnLightGreen: #b2ff59;
+$btnDarkGreen: #3fbb01;
+$btnGreyColor: #4b4b4b;
+$btnWhiteColor: #fff;

@@ -1,11 +1,10 @@
-
 // vertical align
-.vertical-align{
-  & > *{
+.vertical-align {
+  & > * {
     display: inline-block;
     vertical-align: middle;
   }
-  &::before{
+  &::before {
     height: 100%;
     vertical-align: middle;
     margin-left: -4px;
@@ -13,10 +12,69 @@
 }
 
 //standard
-.title{
-  span{
-    font-size: 20px;
-    color: #000;
+.title {
+  padding-bottom: 45px;
+  text-align: center;
+  font-size: 2.143em;
+  @media (max-width: 650px) {
+    padding: 20px 10%;
+    font-size: 1.7em;
+  }
+  @media (max-width: 450px) {
+    font-size: 1.5em;
+  }
+  span {
+    color: $greyTextColor;
     text-align: center;
+  }
+}
+
+// standard text color class
+.color-green{
+  color: $darkGreen !important;
+}
+// standard bg
+.bg-grey{
+  background: $lightGreyBg !important;
+}
+
+p{
+  color:  $greyTextColor;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+//standard btn
+.button{
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 1.28em;
+  text-transform: uppercase;
+  &.big-btn{
+    padding: 20px 40px;
+  }
+  &.small-btn{
+    padding: 10px 20px;
+  }
+  &.light-green{
+    background: $btnLightGreen;
+    color: $btnGreyColor;
+  }
+  &.dark-green{
+    background: $btnDarkGreen;
+    color: $btnWhiteColor;
+  }
+}
+
+.dotted{
+  padding: 30px 0;
+  text-align: center;
+  span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: $lightGreen;
+    margin: 0 5px;
+    border-radius: 50%;
   }
 }
