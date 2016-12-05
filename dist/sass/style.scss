@@ -471,4 +471,46 @@
 
 .reasonably{
   @extend %indents70;
+  font-family: lato-medium;
+  .reasonably-block{
+    padding: 27px 30px 15px;
+    height: 600px;
+    line-height: 1.78;
+    background: $ultraLightGrey;
+    @media (max-width: 991px) {
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+  .left-block{
+    margin-left: 12%;
+    @media (max-width: 991px) {
+      margin: 0;
+      height: 100%;
+    }
+    .green-paragraph{
+      color: $greenTextColor;
+      &::before{
+        content: "-";
+        margin: 0 5px 0 36px;
+      }
+    }
+    .indent{
+      text-indent: 15px;
+    }
+
+  }
+  .right-block{
+    margin-right: 12%;
+    @media (max-width: 991px) {
+      margin: 0;
+      height: 100%;
+    }
+    .dotted{
+      span{
+        background: transparent;
+        border: 2px solid #b2ff59;
+      }
+    }
+  }
 }
