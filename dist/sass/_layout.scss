@@ -190,7 +190,7 @@ body {
     }
   }
   ul {
-    padding: 23px 0 26px 69px;
+    padding: 23px 0 18px 69px;
     width: 100%;
     @media (max-width: 1199px) {
       padding: 23px 0 29px 30px;
@@ -205,23 +205,16 @@ body {
       @media (max-width: 991px) {
         width: 100%;
       }
-      .order-doc {
-        border-bottom: 1px solid #72bb1a;
-        @media (max-width: 991px) {
-          border: none;
-        }
-        &::before {
-          content: "";
-          background: url("../img/hat.png") no-repeat center;
-          display: inline-block;
-          width: 25px;
-          height: 25px;
-          margin-bottom: -7px;
-          margin-right: 10px;
-          @media (max-width: 991px) {
-            span {
-              border-bottom: 1px solid #72bb1a;
-            }
+      &.order-doc {
+        padding-left: 31px;
+        a {
+          img {
+            margin-bottom: 4px
+          }
+          span {
+            border-bottom: 1px solid #73bc1a;
+            padding-left: 20px;
+            margin-left: -10px;
           }
         }
       }
