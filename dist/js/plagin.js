@@ -1,3 +1,4 @@
+//mobile side bar
 ;(function ($){
     $(window).on('load', function(){
         var sidebarBtn = $('.mobile-btn-sidebar');
@@ -9,3 +10,16 @@
     });
 
 })(jQuery);
+
+//input
+var input = $('.input-element');
+input.on('change', function () {
+    var inputVal =  $(this).val();
+    var placeholder = $(this).next('.placeholder');
+
+    if (inputVal && inputVal != ' '){
+        placeholder.addClass('hidden');
+    } else if(!inputVal || ' '){
+        placeholder.removeClass('hidden');
+    }
+});
