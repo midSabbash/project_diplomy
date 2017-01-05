@@ -111,7 +111,7 @@ body {
 
 .nav-bar {
   background: $lightGreyBg;
-  font-family: lato-bold;
+  font-family: lato-bold, serif;
   letter-spacing: 1px;
   position: relative;
   font-size: 0.9em;
@@ -204,6 +204,7 @@ body {
       padding-left: 0;
       @media (max-width: 991px) {
         width: 100%;
+        padding: 10px 0;
       }
       &.order-doc {
         padding-left: 31px;
